@@ -382,6 +382,73 @@ button {
   padding: 0 4rem 0 4rem;
 }
 
+.anniversary .ann-title {
+  background: url("../assets/texts/Title_4.png") no-repeat center/contain;
+  height: 1.15rem;
+  margin-top: 0.4rem;
+}
+
+.anniversary .video {
+  width: 10.06rem;
+  height: 5.98rem;
+  margin: 0 auto;
+  background: url("../assets/Frame-Video.png") no-repeat center/contain;
+}
+
+.event-1, .event-2 {
+  margin-top: 0.5rem;
+}
+
+.event-1 .title, .event-2 .title {
+  background: url("../assets/texts/Title_5.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.event-1 .frame, .event-2 .frame {
+  width: 9.33rem;
+  height: 6.87rem;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  background: url("../assets/Frame-Event-1.png") no-repeat center/contain;
+}
+
+.event-1 .frame .subtitle, .event-2 .frame .subtitle {
+  width: 6.97rem;
+  height: 0.6rem;
+  margin: 0 auto;
+  background: url("../assets/Frame-Subtitle.png") no-repeat center/contain;
+}
+
+.event-1 .frame .image, .event-2 .frame .image {
+  width: 6.97rem;
+  height: 3.68rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  background: url("../assets/Event-Image-1.png") no-repeat center/contain;
+}
+
+.event-1 .frame .description, .event-2 .frame .description {
+  color: #fff;
+  font-size: 0.25rem;
+  padding: 0.2rem 1.2rem 0 1.2rem;
+}
+
+.event-2 .title {
+  background: url("../assets/texts/Title_6.png") no-repeat center/contain;
+}
+
+.event-2 .frame {
+  background: url("../assets/Frame-Event-2.png") no-repeat center/contain;
+}
+
+.event-2 .frame .subtitle {
+  background: url("../assets/Frame-Subtitle.png") no-repeat center/contain;
+}
+
+.event-2 .frame .image {
+  background: url("../assets/Event-Image-2.png") no-repeat center/contain;
+}
+
 html {
   font-size: 100px;
 }

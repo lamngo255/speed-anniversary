@@ -29,3 +29,69 @@
     padding: 0 4rem 0 4rem;
   }
 }
+
+.anniversary {
+  .ann-title {
+    background: assetsUrl('texts/Title_4.png') center / contain;
+    height: 1.15rem;
+    margin-top: 0.4rem;
+  }
+
+  .video {
+    @include sizeWH(10.06rem, 5.98rem);
+    margin: 0 auto;
+    background: assetsUrl('Frame-Video.png') center / contain;
+  }
+}
+
+.event-1 {
+  margin-top: 0.5rem;
+  .title {
+    background: assetsUrl('texts/Title_5.png') center / contain;
+    height: 1.15rem;
+  }
+
+  .frame {
+    @include sizeWH(9.33rem, 6.87rem);
+    margin: 0 auto;
+    padding-top: 0.4rem;
+    background: assetsUrl('Frame-Event-1.png') center / contain;
+
+    .subtitle {
+      @include sizeWH(6.97rem, 0.6rem);
+      margin: 0 auto;
+      background: assetsUrl('Frame-Subtitle.png') center / contain;
+    }
+
+    .image {
+      @include sizeWH(6.97rem, 3.68rem);
+      margin: 0 auto;
+      margin-top: 0.3rem;
+      background: assetsUrl('Event-Image-1.png') center / contain;
+    }
+
+    .description {
+      @include textMixin(#fff, 0.25rem);
+      padding: 0.2rem 1.2rem 0 1.2rem;
+    }
+  }
+}
+
+.event-2 {
+  @extend .event-1;
+  .title {
+    background: assetsUrl('texts/Title_6.png') center / contain;
+  }
+
+  .frame {
+    background: assetsUrl('Frame-Event-2.png') center / contain;
+
+    .subtitle {
+      background: assetsUrl('Frame-Subtitle.png') center / contain;
+    }
+
+    .image {
+      background: assetsUrl('Event-Image-2.png') center / contain;
+    }
+  }
+}
