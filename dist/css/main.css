@@ -281,6 +281,107 @@ button {
   width: 7rem;
 }
 
+.invitation-form .description {
+  padding-top: 1rem;
+}
+
+.invitation-form .description .purple {
+  color: #8e24aa;
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+
+.invitation-form .description .small {
+  padding-top: 0.1rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items {
+  margin-top: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.invitation-form .player-items .item[data-item='1'] {
+  width: 1.24rem;
+  height: 1.24em;
+  background: url("../assets/items/1-Player.png") no-repeat center/contain;
+}
+
+.invitation-form .player-items .item[data-item='1']::before {
+  content: "1 Friend";
+  position: relative;
+  top: 0.6rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items .item[data-item='2'] {
+  width: 1.24rem;
+  height: 1.24em;
+  background: url("../assets/items/2-Player.png") no-repeat center/contain;
+}
+
+.invitation-form .player-items .item[data-item='2']::before {
+  content: "2 Friend";
+  position: relative;
+  top: 0.6rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.invitation-form .player-items .connector {
+  position: absolute;
+  top: 0.55rem;
+  width: 0.64rem;
+  height: 0.1rem;
+  background: #6b58e5;
+}
+
+.panel-anniversary {
+  width: 19.2rem;
+  height: 34.36rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: -0.2rem;
+  background: url("../assets/bg-4.png") no-repeat center top/19.2rem;
+}
+
+.rally-race {
+  text-align: center;
+}
+
+.rally-race .race-title {
+  margin-top: -0.2rem;
+  background: url("../assets/texts/Title_3.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.rally-race .race-image {
+  width: 9.34rem;
+  height: 5.37rem;
+  margin: 0 auto;
+  background: url("../assets/Rally-Race_1.png") no-repeat center/contain;
+}
+
+.rally-race .race-description {
+  margin-top: 0.5rem;
+  font-size: 0.28rem;
+  color: #6b58e5;
+  padding: 0 4rem 0 4rem;
+}
+
 html {
   font-size: 100px;
 }

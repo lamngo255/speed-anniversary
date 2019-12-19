@@ -1,10 +1,10 @@
 @import 'resets';
 @import 'mixins';
 @import 'variables';
-@import 'functions';
 @import 'sections/cover';
 @import 'sections/panel-gift';
 @import 'sections/panel-invitation';
+@import 'sections/panel-anniversary';
 
 html {
   font-size: 100px;

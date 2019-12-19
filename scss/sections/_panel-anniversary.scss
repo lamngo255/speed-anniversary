@@ -1,0 +1,31 @@
+.panel-anniversary {
+  @include sizeWH(19.2rem, 34.36rem);
+
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: -0.2rem;
+  background: assetsUrl('bg-4.png') center top / 19.2rem;
+}
+
+.rally-race {
+  text-align: center;
+
+  .race-title {
+    margin-top: -0.2rem;
+    background: assetsUrl('texts/Title_3.png') center / contain;
+    height: 1.15rem;
+  }
+
+  .race-image {
+    @include sizeWH(9.34rem, 5.37rem);
+    margin: 0 auto;
+    background: assetsUrl('Rally-Race_1.png') center / contain;
+  }
+
+  .race-description {
+    margin-top: 0.5rem;
+    font-size: 0.28rem;
+    color: #6b58e5;
+    padding: 0 4rem 0 4rem;
+  }
+}

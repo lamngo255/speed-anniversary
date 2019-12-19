@@ -47,4 +47,47 @@
     height: 0.65rem;
     width: 7rem;
   }
+
+  .description {
+    padding-top: 1rem;
+
+    .purple {
+      @include textMixin(#8e24aa, 0.3rem, bold);
+    }
+    .small {
+      padding-top: 0.1rem;
+      font-size: 0.2rem;
+    }
+  }
+
+  .player-items {
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+    @for $i from 1 through 2 {
+      .item[data-item='#{$i}'] {
+        @include sizeWH(1.24rem, 1.24em);
+        background: assetsUrl('items/#{$i}-Player.png') center / contain;
+
+        &::before {
+          content: '#{$i} Friend';
+          @include position(relative, 0.6rem);
+          font-size: 0.2rem;
+        }
+      }
+    }
+
+    .item + .item {
+      margin-left: 0.6rem;
+    }
+
+    .connector {
+      @include position(absolute, 0.55rem);
+      @include sizeWH(0.64rem, 0.1rem);
+      background: #6b58e5;
+    }
+  }
 }
