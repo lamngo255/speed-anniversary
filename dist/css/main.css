@@ -77,10 +77,113 @@ button {
 
 .panel-gift {
   width: 19.2rem;
-  height: 58.6rem;
+  height: 13.99rem;
   text-align: center;
   padding-top: 1rem;
-  background: url("../assets/background-2.png") no-repeat center top/19.2rem;
+  background: url("../assets/bg-2.png") no-repeat center top/19.2rem;
+}
+
+.gift-intro {
+  margin-top: 0.5rem;
+}
+
+.gift-intro-title {
+  background: url("../assets/texts/Title_1.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.gift-intro-subtitle {
+  font-size: 0.4rem;
+  color: #5d4037;
+}
+
+.wishlist {
+  margin-top: 0.8rem;
+}
+
+.list-1, .list-2 {
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .text, .list-2 .text {
+  font-size: 0.35rem;
+  color: #d85715;
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .wish-items, .list-2 .wish-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-1 .wish-items .item[data-item='1'], .list-2 .wish-items .item[data-item='1'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_1.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='2'], .list-2 .wish-items .item[data-item='2'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_2.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='3'], .list-2 .wish-items .item[data-item='3'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_3.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-2 {
+  padding-bottom: 0.6rem;
+}
+
+.list-2 .item[data-item='4'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_4.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='5'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_5.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='6'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_6.png") no-repeat center/contain;
+}
+
+.extra-info {
+  color: #bf360c;
+  font-size: 0.25rem;
+}
+
+.extra-info .purple {
+  color: #8e24aa;
+  font-weight: bold;
 }
 
 .btn-wish {
@@ -103,92 +206,79 @@ button {
   background: url("../assets/buttons/Invite-Friend_On.png") no-repeat center/contain;
 }
 
-.intro {
+.btn-wish-yourself {
+  width: 3.06rem;
+  height: 0.8rem;
+  background: url("../assets/buttons/Wish-Button_1.png") no-repeat center/contain;
+}
+
+.btn-wish-yourself:hover {
+  background: url("../assets/buttons/Wish-Button_1-On.png") no-repeat center/contain;
+}
+
+.btn-wish-friend {
+  width: 3.06rem;
+  height: 0.8rem;
+  background: url("../assets/buttons/Wish-Button_2.png") no-repeat center/contain;
+}
+
+.btn-wish-friend:hover {
+  background: url("../assets/buttons/Wish-Button_2-On.png") no-repeat center/contain;
+}
+
+.panel-invitation {
+  width: 19.2rem;
+  height: 10.06rem;
+  text-align: center;
+  padding-top: 0.05rem;
+  margin-top: -0.08rem;
+  background: url("../assets/bg-3.png") no-repeat center top/19.2rem;
+}
+
+.invitation-intro {
   margin-top: 0.5rem;
 }
 
-.intro-title {
-  background: url("../assets/texts/Title_1.png") no-repeat center/contain;
+.invitation-intro-title {
+  background: url("../assets/texts/Title_2.png") no-repeat center/contain;
   height: 1.15rem;
 }
 
-.intro-subtitle {
+.invitation-intro-subtitle {
   font-size: 0.4rem;
   color: #5d4037;
 }
 
-.wishlist {
-  margin-top: 0.8rem;
+.invitation-intro-image {
+  margin-top: 0.5rem;
+  background: url("../assets/Invite-Reward.png") no-repeat center/contain;
+  height: 3.8rem;
 }
 
-.list-1, .list-2 {
-  padding-bottom: 0.3rem;
+.invitation-form {
+  margin-top: 0.3rem;
+  display: relative;
 }
 
-.list-1 .text, .list-2 .text {
-  font-size: 0.35rem;
-  padding-bottom: 0.3rem;
+.invitation-form .btn-copy-link {
+  position: absolute;
+  left: 4.5rem;
+  width: 1.83rem;
+  height: 0.65rem;
+  background: url("../assets/buttons/Copy-Link.png") no-repeat center/contain;
 }
 
-.list-1 .wish-items, .list-2 .wish-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.invitation-form .btn-copy-link:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
-.list-1 .wish-items .item[data-item='1'], .list-2 .wish-items .item[data-item='1'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_1.png") no-repeat center/contain;
-}
-
-.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
-  margin-left: 0.6rem;
-}
-
-.list-1 .wish-items .item[data-item='2'], .list-2 .wish-items .item[data-item='2'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_2.png") no-repeat center/contain;
-}
-
-.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
-  margin-left: 0.6rem;
-}
-
-.list-1 .wish-items .item[data-item='3'], .list-2 .wish-items .item[data-item='3'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_3.png") no-repeat center/contain;
-}
-
-.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
-  margin-left: 0.6rem;
-}
-
-.list-2 .item[data-item='4'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_4.png") no-repeat center/contain;
-}
-
-.list-2 .item[data-item='5'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_5.png") no-repeat center/contain;
-}
-
-.list-2 .item[data-item='6'] {
-  width: 1.6rem;
-  height: 1.6em;
-  background: url("../assets/items/Pre-Regis-Wish_6.png") no-repeat center/contain;
+.invitation-form .invite-code {
+  position: absolute;
+  left: 6.4rem;
+  background: url("../assets/Url-Box.png") no-repeat center/contain;
+  height: 0.65rem;
+  width: 7rem;
 }
 
 html {

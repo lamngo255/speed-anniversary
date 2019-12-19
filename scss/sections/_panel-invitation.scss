@@ -1,0 +1,50 @@
+.panel-invitation {
+  @include sizeWH(19.2rem, 10.06rem);
+
+  text-align: center;
+  padding-top: 0.05rem;
+  margin-top: -0.08rem;
+  background: assetsUrl('bg-3.png') center top / 19.2rem;
+}
+
+.invitation-intro {
+  margin-top: 0.5rem;
+
+  &-title {
+    background: assetsUrl('texts/Title_2.png') center / contain;
+    height: 1.15rem;
+  }
+
+  &-subtitle {
+    font-size: 0.4rem;
+    color: #5d4037;
+  }
+
+  &-image {
+    margin-top: 0.5rem;
+    background: assetsUrl('Invite-Reward.png') center / contain;
+    height: 3.8rem;
+  }
+}
+
+.invitation-form {
+  margin-top: 0.3rem;
+  display: relative;
+
+  .btn-copy-link {
+    @include position(absolute, $left: 4.5rem);
+    @include sizeWH(1.83rem, 0.65rem);
+    background: assetsUrl('buttons/Copy-Link.png') center / contain;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  .invite-code {
+    @include position(absolute, $left: 6.4rem);
+    background: assetsUrl('Url-Box.png') center / contain;
+    height: 0.65rem;
+    width: 7rem;
+  }
+}
