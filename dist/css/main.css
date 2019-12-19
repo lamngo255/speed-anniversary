@@ -29,6 +29,19 @@ button:hover {
 /* align center */
 /* clear float */
 /* ellipsis */
+.main-cover {
+  width: 19.2rem;
+  height: 10.8rem;
+  position: relative;
+  background: url("../assets/../assets/cover.png") no-repeat center top/19.2rem;
+}
+
+#navbar {
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-right: 3rem;
+}
+
 #navbar .homepage {
   width: 1.97rem;
   height: 0.54rem;
@@ -41,13 +54,28 @@ button:hover {
   background: url("../assets/Header-Button_2.png") no-repeat center/contain;
 }
 
-html {
-  font-size: 100px;
+.game-title {
+  margin-top: 6.5rem;
 }
 
-body {
-  background: url("../assets/../assets/bg.png") no-repeat center top/19.2rem;
+.game-title .title {
+  background: url("../assets/main-title.png") no-repeat center/contain;
+  height: 3rem;
+}
+
+.game-title .subtitle {
+  margin-top: -0.5rem;
+  background: url("../assets/sub-title.png") no-repeat center/contain;
+  height: 1.5rem;
+}
+
+.panel-gift {
   width: 19.2rem;
-  height: 69.57rem;
+  height: 58.6rem;
+  background: url("../assets/../assets/background-2.png") no-repeat center top/19.2rem;
+}
+
+html {
+  font-size: 100px;
 }
 /*# sourceMappingURL=main.css.map */

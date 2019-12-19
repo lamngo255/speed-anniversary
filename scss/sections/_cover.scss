@@ -1,6 +1,16 @@
 @import '../mixins.scss';
 
+.main-cover {
+  @include sizeWH(19.2rem, 10.8rem);
+  position: relative;
+  background: assetsUrl('../assets/cover.png') center top / 19.2rem;
+}
+
 #navbar {
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-right: 3rem;
+
   .homepage {
     @include sizeWH(1.97rem, 0.54rem);
     background: assetsUrl('Header-Button_1.png') center / contain;
@@ -9,5 +19,18 @@
   .download {
     @include sizeWH(1.97rem, 0.54rem);
     background: assetsUrl('Header-Button_2.png') center / contain;
+  }
+}
+
+.game-title {
+  margin-top: 6.5rem;
+  .title {
+    background: assetsUrl('main-title.png') center / contain;
+    height: 3rem;
+  }
+  .subtitle {
+    margin-top: -0.5rem;
+    background: assetsUrl('sub-title.png') center / contain;
+    height: 1.5rem;
   }
 }

@@ -1,0 +1,4 @@
+.panel-gift {
+  @include sizeWH(19.2rem, 58.6rem);
+  background: assetsUrl('../assets/background-2.png') center top / 19.2rem;
+}
