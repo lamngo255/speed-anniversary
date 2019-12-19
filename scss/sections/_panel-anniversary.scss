@@ -40,7 +40,13 @@
   .video {
     @include sizeWH(10.06rem, 5.98rem);
     margin: 0 auto;
+    padding-top: 0.5rem;
     background: assetsUrl('Frame-Video.png') center / contain;
+
+    iframe {
+      width: 8.8rem;
+      height: 5rem;
+    }
   }
 }
 

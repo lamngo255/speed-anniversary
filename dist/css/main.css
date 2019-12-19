@@ -429,7 +429,13 @@ button {
   width: 10.06rem;
   height: 5.98rem;
   margin: 0 auto;
+  padding-top: 0.5rem;
   background: url("../assets/Frame-Video.png") no-repeat center/contain;
+}
+
+.anniversary .video iframe {
+  width: 8.8rem;
+  height: 5rem;
 }
 
 .event-1, .event-2 {
