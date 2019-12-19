@@ -1,0 +1,15 @@
+@import 'resets';
+@import 'mixins';
+@import 'variables';
+@import 'functions';
+@import 'sections/cover';
+
+html {
+  font-size: 100px;
+}
+
+body {
+  @include fullscreenBg('../assets/bg.png');
+  width: 19.2rem;
+  height: 69.57rem;
+}
