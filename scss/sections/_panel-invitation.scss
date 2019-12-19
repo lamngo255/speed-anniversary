@@ -32,7 +32,7 @@
   display: relative;
 
   .btn-copy-link {
-    @include position(absolute, $left: 4.5rem);
+    @include position(absolute, $left: 5.1rem);
     @include sizeWH(1.83rem, 0.65rem);
     background: assetsUrl('buttons/Copy-Link.png') center / contain;
 
@@ -42,10 +42,26 @@
   }
 
   .invite-code {
-    @include position(absolute, $left: 6.4rem);
+    @include position(absolute, $left: 7rem);
     background: assetsUrl('Url-Box.png') center / contain;
     height: 0.65rem;
     width: 7rem;
+
+    &-input {
+      @include position(absolute, 0rem, $left: 2rem);
+      @include sizeWH(4rem, 0.6rem);
+      @include textMixin(#bf360c, 0.3rem);
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      &::placeholder {
+        @include textMixin(#bf360c, 0.3rem);
+      }
+    }
   }
 
   .description {

@@ -27,7 +27,7 @@
 .list-1 {
   padding-bottom: 0.3rem;
   .text {
-    @include textMixin(#d85715, 0.32rem, bold);
+    @include textMixin(#bf360c, 0.32rem, $weight: 500);
     padding-bottom: 0.3rem;
   }
 
