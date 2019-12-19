@@ -412,8 +412,16 @@ button {
   background: url("../assets/Rally-Race_1.png") no-repeat center/contain;
 }
 
+.rally-race .race-navigator {
+  width: 0.74rem;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background: url("../assets/navigator.png") no-repeat center/contain;
+}
+
 .rally-race .race-description {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   font-size: 0.28rem;
   color: #6b58e5;
   padding: 0 4rem 0 4rem;

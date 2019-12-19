@@ -22,8 +22,15 @@
     background: assetsUrl('Rally-Race_1.png') center / contain;
   }
 
+  .race-navigator {
+    @include sizeWH(0.74rem, 0.15rem);
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    background: assetsUrl('navigator.png') center / contain;
+  }
+
   .race-description {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     font-size: 0.28rem;
     color: #6b58e5;
     padding: 0 4rem 0 4rem;
