@@ -30,9 +30,8 @@
   }
 
   .race-description {
+    @include textMixin(#6b58e5, 0.28rem);
     margin-top: 0.3rem;
-    font-size: 0.28rem;
-    color: #6b58e5;
     padding: 0 4rem 0 4rem;
   }
 }
@@ -51,8 +50,7 @@
     background: assetsUrl('Frame-Video.png') center / contain;
 
     iframe {
-      width: 8.8rem;
-      height: 5rem;
+      @include sizeWH(8.8rem, 5rem);
     }
   }
 }
