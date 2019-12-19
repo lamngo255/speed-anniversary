@@ -59,7 +59,9 @@
 
     .subtitle {
       @include sizeWH(6.97rem, 0.6rem);
+      @include textMixin(#d95615, 0.4rem);
       margin: 0 auto;
+      padding-top: 0.08rem;
       background: assetsUrl('Frame-Subtitle.png') center / contain;
     }
 
@@ -71,7 +73,7 @@
     }
 
     .description {
-      @include textMixin(#fff, 0.25rem);
+      @include textMixin(#fff, 0.22rem);
       padding: 0.2rem 1.2rem 0 1.2rem;
     }
   }
@@ -85,11 +87,9 @@
 
   .frame {
     background: assetsUrl('Frame-Event-2.png') center / contain;
-
     .subtitle {
       background: assetsUrl('Frame-Subtitle.png') center / contain;
     }
-
     .image {
       background: assetsUrl('Event-Image-2.png') center / contain;
     }

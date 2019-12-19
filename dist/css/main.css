@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/vjf6qgr.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -98,7 +99,7 @@ button {
 }
 
 .wishlist {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .list-1, .list-2 {
@@ -106,8 +107,9 @@ button {
 }
 
 .list-1 .text, .list-2 .text {
-  font-size: 0.35rem;
   color: #d85715;
+  font-size: 0.32rem;
+  font-weight: bold;
   padding-bottom: 0.3rem;
 }
 
@@ -155,7 +157,7 @@ button {
 }
 
 .list-2 {
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
 }
 
 .list-2 .item[data-item='4'] {
@@ -178,7 +180,7 @@ button {
 
 .extra-info {
   color: #bf360c;
-  font-size: 0.25rem;
+  font-size: 0.22rem;
 }
 
 .extra-info .purple {
@@ -415,7 +417,10 @@ button {
 .event-1 .frame .subtitle, .event-2 .frame .subtitle {
   width: 6.97rem;
   height: 0.6rem;
+  color: #d95615;
+  font-size: 0.4rem;
   margin: 0 auto;
+  padding-top: 0.08rem;
   background: url("../assets/Frame-Subtitle.png") no-repeat center/contain;
 }
 
@@ -429,7 +434,7 @@ button {
 
 .event-1 .frame .description, .event-2 .frame .description {
   color: #fff;
-  font-size: 0.25rem;
+  font-size: 0.22rem;
   padding: 0.2rem 1.2rem 0 1.2rem;
 }
 
@@ -451,5 +456,6 @@ button {
 
 html {
   font-size: 100px;
+  font-family: roboto, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

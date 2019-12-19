@@ -21,14 +21,13 @@
 }
 
 .wishlist {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .list-1 {
   padding-bottom: 0.3rem;
   .text {
-    font-size: 0.35rem;
-    color: #d85715;
+    @include textMixin(#d85715, 0.32rem, bold);
     padding-bottom: 0.3rem;
   }
 
@@ -52,7 +51,7 @@
 
 .list-2 {
   @extend .list-1;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
 
   @for $i from 4 through 6 {
     .item[data-item='#{$i}'] {
@@ -63,7 +62,7 @@
 }
 
 .extra-info {
-  @include textMixin(#bf360c, 0.25rem);
+  @include textMixin(#bf360c, 0.22rem);
 
   .purple {
     color: #8e24aa;
