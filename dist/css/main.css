@@ -12,6 +12,12 @@ button {
   border: none;
 }
 
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
 /* fullscreen background */
 /* full size */
 /* full cover */
