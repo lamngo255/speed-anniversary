@@ -60,13 +60,13 @@ button:hover {
 
 .game-title .title {
   background: url("../assets/main-title.png") no-repeat center/contain;
-  height: 3rem;
+  height: 2.8rem;
 }
 
 .game-title .subtitle {
   margin-top: -0.5rem;
   background: url("../assets/sub-title.png") no-repeat center/contain;
-  height: 1.5rem;
+  height: 1.3rem;
 }
 
 .panel-gift {
