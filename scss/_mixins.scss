@@ -1,6 +1,12 @@
+$assetsPath: '../assets';
+
 /* fullscreen background */
 @mixin fullscreenBg($url) {
   background: url($url) no-repeat;
+}
+
+@function assetsUrl($path) {
+  @return url('#{$assetsPath}/#{$path}') no-repeat;
 }
 
 @mixin position($pos, $top: null, $right: null, $bottom: null, $left: null, $z-index: null) {

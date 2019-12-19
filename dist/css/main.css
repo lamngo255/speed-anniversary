@@ -5,18 +5,40 @@
   padding: 0;
 }
 
+a,
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a:hover,
+button:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
 /* fullscreen background */
 /* full size */
 /* full cover */
 /* align center */
 /* clear float */
 /* ellipsis */
-#navbar {
-  font-size: 0.3rem;
+/* fullscreen background */
+/* full size */
+/* full cover */
+/* align center */
+/* clear float */
+/* ellipsis */
+#navbar .homepage {
+  width: 1.97rem;
+  height: 0.54rem;
+  background: url("../assets/Header-Button_1.png") no-repeat center/contain;
 }
 
-#navbar .homepage {
-  background: url("../assets/");
+#navbar .download {
+  width: 1.97rem;
+  height: 0.54rem;
+  background: url("../assets/Header-Button_2.png") no-repeat center/contain;
 }
 
 html {
@@ -24,7 +46,7 @@ html {
 }
 
 body {
-  background: url("../assets/bg.png") no-repeat;
+  background: url("../assets/../assets/bg.png") no-repeat center top/19.2rem;
   width: 19.2rem;
   height: 69.57rem;
 }

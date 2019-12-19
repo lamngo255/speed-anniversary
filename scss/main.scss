@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @include fullscreenBg('../assets/bg.png');
+  background: assetsUrl('../assets/bg.png') center top / 19.2rem;
   width: 19.2rem;
   height: 69.57rem;
 }

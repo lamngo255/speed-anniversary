@@ -1,7 +1,13 @@
-#navbar {
-  font-size: 0.3rem;
+@import '../mixins.scss';
 
+#navbar {
   .homepage {
-    background: url('../assets/');
+    @include sizeWH(1.97rem, 0.54rem);
+    background: assetsUrl('Header-Button_1.png') center / contain;
+  }
+
+  .download {
+    @include sizeWH(1.97rem, 0.54rem);
+    background: assetsUrl('Header-Button_2.png') center / contain;
   }
 }
