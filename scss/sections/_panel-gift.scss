@@ -1,4 +1,79 @@
 .panel-gift {
   @include sizeWH(19.2rem, 58.6rem);
-  background: assetsUrl('../assets/background-2.png') center top / 19.2rem;
+
+  text-align: center;
+  padding-top: 1rem;
+  background: assetsUrl('background-2.png') center top / 19.2rem;
+}
+
+.btn-wish {
+  @include sizeWH(4.15rem, 1.07rem);
+  background: assetsUrl('buttons/Pre-Regis-Button.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Pre-Regis-Button_On.png') center / contain;
+  }
+}
+
+.btn-invite {
+  @include sizeWH(4.15rem, 1.07rem);
+  background: assetsUrl('buttons/Invite-Friend.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Invite-Friend_On.png') center / contain;
+  }
+}
+
+.intro {
+  margin-top: 0.5rem;
+
+  &-title {
+    background: assetsUrl('texts/Title_1.png') center / contain;
+    height: 1.15rem;
+  }
+
+  &-subtitle {
+    font-size: 0.4rem;
+    color: #5d4037;
+  }
+}
+
+.wishlist {
+  margin-top: 0.8rem;
+}
+
+.list-1 {
+  padding-bottom: 0.3rem;
+  .text {
+    font-size: 0.35rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .wish-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @for $i from 1 through 3 {
+      .item[data-item='#{$i}'] {
+        @include sizeWH(1.6rem, 1.6em);
+        background: assetsUrl('items/Pre-Regis-Wish_#{$i}.png') center / contain;
+      }
+
+      .item + .item {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+}
+
+.list-2 {
+  @extend .list-1;
+
+  @for $i from 4 through 6 {
+    .item[data-item='#{$i}'] {
+      @include sizeWH(1.6rem, 1.6em);
+      background: assetsUrl('items/Pre-Regis-Wish_#{$i}.png') center / contain;
+    }
+  }
 }

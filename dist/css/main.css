@@ -11,12 +11,6 @@ button {
   border: none;
 }
 
-a:hover,
-button:hover {
-  -webkit-filter: brightness(1.2);
-          filter: brightness(1.2);
-}
-
 /* fullscreen background */
 /* full size */
 /* full cover */
@@ -33,7 +27,7 @@ button:hover {
   width: 19.2rem;
   height: 10.8rem;
   position: relative;
-  background: url("../assets/../assets/cover.png") no-repeat center top/19.2rem;
+  background: url("../assets/cover.png") no-repeat center top/19.2rem;
 }
 
 #navbar {
@@ -42,37 +36,159 @@ button:hover {
   padding-right: 3rem;
 }
 
-#navbar .homepage {
+#navbar .btn-homepage {
   width: 1.97rem;
   height: 0.54rem;
-  background: url("../assets/Header-Button_1.png") no-repeat center/contain;
+  background: url("../assets/buttons/Header-Button_1.png") no-repeat center/contain;
 }
 
-#navbar .download {
+#navbar .btn-homepage:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+#navbar .btn-download {
   width: 1.97rem;
   height: 0.54rem;
-  background: url("../assets/Header-Button_2.png") no-repeat center/contain;
+  background: url("../assets/buttons/Header-Button_2.png") no-repeat center/contain;
+}
+
+#navbar .btn-download:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .game-title {
-  margin-top: 6.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: -0.8rem;
 }
 
 .game-title .title {
-  background: url("../assets/main-title.png") no-repeat center/contain;
+  background: url("../assets/texts/main-title.png") no-repeat center/contain;
   height: 2.8rem;
 }
 
 .game-title .subtitle {
   margin-top: -0.5rem;
-  background: url("../assets/sub-title.png") no-repeat center/contain;
+  background: url("../assets/texts/sub-title.png") no-repeat center/contain;
   height: 1.3rem;
 }
 
 .panel-gift {
   width: 19.2rem;
   height: 58.6rem;
-  background: url("../assets/../assets/background-2.png") no-repeat center top/19.2rem;
+  text-align: center;
+  padding-top: 1rem;
+  background: url("../assets/background-2.png") no-repeat center top/19.2rem;
+}
+
+.btn-wish {
+  width: 4.15rem;
+  height: 1.07rem;
+  background: url("../assets/buttons/Pre-Regis-Button.png") no-repeat center/contain;
+}
+
+.btn-wish:hover {
+  background: url("../assets/buttons/Pre-Regis-Button_On.png") no-repeat center/contain;
+}
+
+.btn-invite {
+  width: 4.15rem;
+  height: 1.07rem;
+  background: url("../assets/buttons/Invite-Friend.png") no-repeat center/contain;
+}
+
+.btn-invite:hover {
+  background: url("../assets/buttons/Invite-Friend_On.png") no-repeat center/contain;
+}
+
+.intro {
+  margin-top: 0.5rem;
+}
+
+.intro-title {
+  background: url("../assets/texts/Title_1.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.intro-subtitle {
+  font-size: 0.4rem;
+  color: #5d4037;
+}
+
+.wishlist {
+  margin-top: 0.8rem;
+}
+
+.list-1, .list-2 {
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .text, .list-2 .text {
+  font-size: 0.35rem;
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .wish-items, .list-2 .wish-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-1 .wish-items .item[data-item='1'], .list-2 .wish-items .item[data-item='1'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_1.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='2'], .list-2 .wish-items .item[data-item='2'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_2.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='3'], .list-2 .wish-items .item[data-item='3'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_3.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-2 .item[data-item='4'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_4.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='5'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_5.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='6'] {
+  width: 1.6rem;
+  height: 1.6em;
+  background: url("../assets/items/Pre-Regis-Wish_6.png") no-repeat center/contain;
 }
 
 html {
