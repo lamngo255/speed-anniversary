@@ -77,10 +77,8 @@
   }
 
   .player-items {
+    @include flexCenter(row);
     margin-top: 0.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     position: relative;
 
     @for $i from 1 through 2 {
