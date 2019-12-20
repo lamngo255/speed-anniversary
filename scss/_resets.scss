@@ -1,5 +1,17 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+  border: none;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
 }

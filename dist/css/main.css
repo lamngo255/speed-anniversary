@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/vjf6qgr.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,27 +6,509 @@
   padding: 0;
 }
 
+a,
+button {
+  cursor: pointer;
+  border: none;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
 /* fullscreen background */
-/* full size */
-/* full cover */
 /* align center */
-/* clear float */
-/* ellipsis */
+/* fullscreen background */
+/* align center */
+.main-cover {
+  width: 19.2rem;
+  height: 10.8rem;
+  position: relative;
+  background: url("../assets/cover.png") no-repeat center top/19.2rem;
+}
+
 #navbar {
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-right: 3rem;
+}
+
+#navbar .btn-homepage {
+  width: 1.97rem;
+  height: 0.54rem;
+  background: url("../assets/buttons/Header-Button_1.png") no-repeat center/contain;
+}
+
+#navbar .btn-homepage:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+#navbar .btn-download {
+  width: 1.97rem;
+  height: 0.54rem;
+  background: url("../assets/buttons/Header-Button_2.png") no-repeat center/contain;
+}
+
+#navbar .btn-download:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.game-title {
+  width: 100%;
+  position: absolute;
+  bottom: -0.8rem;
+}
+
+.game-title .title {
+  background: url("../assets/texts/main-title.png") no-repeat center/contain;
+  height: 2.8rem;
+}
+
+.game-title .subtitle {
+  margin-top: -0.5rem;
+  background: url("../assets/texts/sub-title.png") no-repeat center/contain;
+  height: 1.3rem;
+}
+
+.panel-gift {
+  width: 19.2rem;
+  height: 13.99rem;
+  text-align: center;
+  padding-top: 1rem;
+  background: url("../assets/bg-2.png") no-repeat center top/19.2rem;
+}
+
+.gift-intro {
+  margin-top: 0.5rem;
+}
+
+.gift-intro-title {
+  background: url("../assets/texts/Title_1.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.gift-intro-subtitle {
+  font-size: 0.4rem;
+  color: #5d4037;
+}
+
+.wishlist {
+  margin-top: 0.5rem;
+}
+
+.list-1, .list-2 {
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .text, .list-2 .text {
+  color: #bf360c;
+  font-size: 0.32rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+}
+
+.list-1 .wish-items, .list-2 .wish-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.list-1 .wish-items .item[data-item='1'], .list-2 .wish-items .item[data-item='1'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_1.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='2'], .list-2 .wish-items .item[data-item='2'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_2.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-1 .wish-items .item[data-item='3'], .list-2 .wish-items .item[data-item='3'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_3.png") no-repeat center/contain;
+}
+
+.list-1 .wish-items .item + .item, .list-2 .wish-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.list-2 {
+  padding-bottom: 0.3rem;
+}
+
+.list-2 .item[data-item='4'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_4.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='5'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_5.png") no-repeat center/contain;
+}
+
+.list-2 .item[data-item='6'] {
+  width: 1.5rem;
+  height: 1.5em;
+  background: url("../assets/items/Pre-Regis-Wish_6.png") no-repeat center/contain;
+}
+
+.extra-info {
+  color: #bf360c;
+  font-size: 0.22rem;
+}
+
+.extra-info .purple {
+  color: #8e24aa;
+  font-weight: bold;
+}
+
+.btn-wish {
+  width: 4.15rem;
+  height: 1.07rem;
+  background: url("../assets/buttons/Pre-Regis-Button.png") no-repeat center/contain;
+}
+
+.btn-wish:hover {
+  background: url("../assets/buttons/Pre-Regis-Button_On.png") no-repeat center/contain;
+}
+
+.btn-invite {
+  width: 4.15rem;
+  height: 1.07rem;
+  background: url("../assets/buttons/Invite-Friend.png") no-repeat center/contain;
+}
+
+.btn-invite:hover {
+  background: url("../assets/buttons/Invite-Friend_On.png") no-repeat center/contain;
+}
+
+.btn-wish-yourself {
+  width: 3.06rem;
+  height: 0.8rem;
+  background: url("../assets/buttons/Wish-Button_1.png") no-repeat center/contain;
+}
+
+.btn-wish-yourself:hover {
+  background: url("../assets/buttons/Wish-Button_1-On.png") no-repeat center/contain;
+}
+
+.btn-wish-friend {
+  width: 3.06rem;
+  height: 0.8rem;
+  background: url("../assets/buttons/Wish-Button_2.png") no-repeat center/contain;
+}
+
+.btn-wish-friend:hover {
+  background: url("../assets/buttons/Wish-Button_2-On.png") no-repeat center/contain;
+}
+
+.panel-invitation {
+  width: 19.2rem;
+  height: 10.06rem;
+  text-align: center;
+  padding-top: 0.05rem;
+  margin-top: -0.08rem;
+  background: url("../assets/bg-3.png") no-repeat center top/19.2rem;
+}
+
+.invitation-intro {
+  margin-top: 0.5rem;
+}
+
+.invitation-intro-title {
+  background: url("../assets/texts/Title_2.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.invitation-intro-subtitle {
+  font-size: 0.4rem;
+  color: #5d4037;
+}
+
+.invitation-intro-image {
+  margin-top: 0.5rem;
+  background: url("../assets/Invite-Reward.png") no-repeat center/contain;
+  height: 3.8rem;
+}
+
+.invitation-form {
+  margin-top: 0.3rem;
+  display: relative;
+}
+
+.invitation-form .btn-copy-link {
+  position: absolute;
+  left: 5.1rem;
+  width: 1.83rem;
+  height: 0.65rem;
+  background: url("../assets/buttons/Copy-Link.png") no-repeat center/contain;
+}
+
+.invitation-form .btn-copy-link:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.invitation-form .invite-code {
+  position: absolute;
+  left: 7rem;
+  background: url("../assets/Url-Box.png") no-repeat center/contain;
+  height: 0.65rem;
+  width: 7rem;
+}
+
+.invitation-form .invite-code-input {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  width: 4rem;
+  height: 0.6rem;
+  color: #bf360c;
+  font-size: 0.3rem;
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.invitation-form .invite-code-input::-webkit-input-placeholder {
+  color: #bf360c;
   font-size: 0.3rem;
 }
 
-#navbar .homepage {
-  background: url("../assets/");
+.invitation-form .invite-code-input:-ms-input-placeholder {
+  color: #bf360c;
+  font-size: 0.3rem;
+}
+
+.invitation-form .invite-code-input::-ms-input-placeholder {
+  color: #bf360c;
+  font-size: 0.3rem;
+}
+
+.invitation-form .invite-code-input::placeholder {
+  color: #bf360c;
+  font-size: 0.3rem;
+}
+
+.invitation-form .description {
+  padding-top: 1rem;
+}
+
+.invitation-form .description .purple {
+  color: #8e24aa;
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+
+.invitation-form .description .small {
+  padding-top: 0.1rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.2rem;
+  position: relative;
+}
+
+.invitation-form .player-items .item[data-item='1'] {
+  width: 1.24rem;
+  height: 1.24em;
+  background: url("../assets/items/1-Player.png") no-repeat center/contain;
+}
+
+.invitation-form .player-items .item[data-item='1']::before {
+  content: "1 Friend";
+  position: relative;
+  top: 0.6rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items .item[data-item='2'] {
+  width: 1.24rem;
+  height: 1.24em;
+  background: url("../assets/items/2-Player.png") no-repeat center/contain;
+}
+
+.invitation-form .player-items .item[data-item='2']::before {
+  content: "2 Friend";
+  position: relative;
+  top: 0.6rem;
+  font-size: 0.2rem;
+}
+
+.invitation-form .player-items .item + .item {
+  margin-left: 0.6rem;
+}
+
+.invitation-form .player-items .connector {
+  position: absolute;
+  top: 0.55rem;
+  width: 0.64rem;
+  height: 0.1rem;
+  background: #6b58e5;
+}
+
+.panel-anniversary {
+  width: 19.2rem;
+  height: 34.36rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: -0.2rem;
+  background: url("../assets/bg-4.png") no-repeat center top/19.2rem;
+}
+
+.rally-race {
+  text-align: center;
+}
+
+.rally-race .race-title {
+  margin-top: -0.2rem;
+  background: url("../assets/texts/Title_3.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.rally-race .race-image {
+  width: 9.34rem;
+  height: 5.37rem;
+  margin: 0 auto;
+  background: url("../assets/Rally-Race_1.png") no-repeat center/contain;
+}
+
+.rally-race .race-navigator {
+  width: 0.74rem;
+  height: 0.15rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  background: url("../assets/navigator.png") no-repeat center/contain;
+}
+
+.rally-race .race-description {
+  color: #6b58e5;
+  font-size: 0.28rem;
+  margin-top: 0.3rem;
+  padding: 0 4rem 0 4rem;
+}
+
+.anniversary .ann-title {
+  background: url("../assets/texts/Title_4.png") no-repeat center/contain;
+  height: 1.15rem;
+  margin-top: 0.4rem;
+}
+
+.anniversary .video {
+  width: 10.06rem;
+  height: 5.98rem;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  background: url("../assets/Frame-Video.png") no-repeat center/contain;
+}
+
+.anniversary .video iframe {
+  width: 8.8rem;
+  height: 5rem;
+}
+
+.event-1, .event-2 {
+  margin-top: 0.5rem;
+}
+
+.event-1 .title, .event-2 .title {
+  background: url("../assets/texts/Title_5.png") no-repeat center/contain;
+  height: 1.15rem;
+}
+
+.event-1 .frame, .event-2 .frame {
+  width: 9.33rem;
+  height: 6.87rem;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  background: url("../assets/Frame-Event-1.png") no-repeat center/contain;
+}
+
+.event-1 .frame .subtitle, .event-2 .frame .subtitle {
+  width: 6.97rem;
+  height: 0.6rem;
+  color: #d95615;
+  font-size: 0.4rem;
+  margin: 0 auto;
+  padding-top: 0.05rem;
+  background: url("../assets/Frame-Subtitle.png") no-repeat center/contain;
+}
+
+.event-1 .frame .image, .event-2 .frame .image {
+  width: 6.97rem;
+  height: 3.68rem;
+  margin: 0 auto;
+  margin-top: 0.3rem;
+  background: url("../assets/Event-Image-1.png") no-repeat center/contain;
+}
+
+.event-1 .frame .description, .event-2 .frame .description {
+  color: #fff;
+  font-size: 0.22rem;
+  padding: 0.2rem 1.2rem 0 1.2rem;
+}
+
+.event-2 .title {
+  background: url("../assets/texts/Title_6.png") no-repeat center/contain;
+}
+
+.event-2 .frame {
+  background: url("../assets/Frame-Event-2.png") no-repeat center/contain;
+}
+
+.event-2 .frame .subtitle {
+  background: url("../assets/Frame-Subtitle.png") no-repeat center/contain;
+}
+
+.event-2 .frame .image {
+  background: url("../assets/Event-Image-2.png") no-repeat center/contain;
 }
 
 html {
   font-size: 100px;
-}
-
-body {
-  background: url("../assets/bg.png") no-repeat;
-  width: 19.2rem;
-  height: 69.57rem;
+  font-family: roboto, sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

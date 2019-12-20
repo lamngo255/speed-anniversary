@@ -1,15 +1,14 @@
 @import 'resets';
 @import 'mixins';
 @import 'variables';
-@import 'functions';
 @import 'sections/cover';
+@import 'sections/panel-gift';
+@import 'sections/panel-invitation';
+@import 'sections/panel-anniversary';
 
 html {
   font-size: 100px;
-}
+  font-family: roboto, sans-serif;
 
-body {
-  @include fullscreenBg('../assets/bg.png');
-  width: 19.2rem;
-  height: 69.57rem;
+  @import url('https://use.typekit.net/vjf6qgr.css');
 }

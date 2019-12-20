@@ -1,0 +1,108 @@
+.panel-anniversary {
+  @include sizeWH(19.2rem, 34.36rem);
+
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: -0.2rem;
+  background: assetsUrl('bg-4.png') center top / 19.2rem;
+}
+
+.rally-race {
+  text-align: center;
+
+  .race-title {
+    margin-top: -0.2rem;
+    background: assetsUrl('texts/Title_3.png') center / contain;
+    height: 1.15rem;
+  }
+
+  .race-image {
+    @include sizeWH(9.34rem, 5.37rem);
+    margin: 0 auto;
+    background: assetsUrl('Rally-Race_1.png') center / contain;
+  }
+
+  .race-navigator {
+    @include sizeWH(0.74rem, 0.15rem);
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    background: assetsUrl('navigator.png') center / contain;
+  }
+
+  .race-description {
+    @include textMixin(#6b58e5, 0.28rem);
+    margin-top: 0.3rem;
+    padding: 0 4rem 0 4rem;
+  }
+}
+
+.anniversary {
+  .ann-title {
+    background: assetsUrl('texts/Title_4.png') center / contain;
+    height: 1.15rem;
+    margin-top: 0.4rem;
+  }
+
+  .video {
+    @include sizeWH(10.06rem, 5.98rem);
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    background: assetsUrl('Frame-Video.png') center / contain;
+
+    iframe {
+      @include sizeWH(8.8rem, 5rem);
+    }
+  }
+}
+
+.event-1 {
+  margin-top: 0.5rem;
+  .title {
+    background: assetsUrl('texts/Title_5.png') center / contain;
+    height: 1.15rem;
+  }
+
+  .frame {
+    @include sizeWH(9.33rem, 6.87rem);
+    margin: 0 auto;
+    padding-top: 0.4rem;
+    background: assetsUrl('Frame-Event-1.png') center / contain;
+
+    .subtitle {
+      @include sizeWH(6.97rem, 0.6rem);
+      @include textMixin(#d95615, 0.4rem);
+      margin: 0 auto;
+      padding-top: 0.05rem;
+      background: assetsUrl('Frame-Subtitle.png') center / contain;
+    }
+
+    .image {
+      @include sizeWH(6.97rem, 3.68rem);
+      margin: 0 auto;
+      margin-top: 0.3rem;
+      background: assetsUrl('Event-Image-1.png') center / contain;
+    }
+
+    .description {
+      @include textMixin(#fff, 0.22rem);
+      padding: 0.2rem 1.2rem 0 1.2rem;
+    }
+  }
+}
+
+.event-2 {
+  @extend .event-1;
+  .title {
+    background: assetsUrl('texts/Title_6.png') center / contain;
+  }
+
+  .frame {
+    background: assetsUrl('Frame-Event-2.png') center / contain;
+    .subtitle {
+      background: assetsUrl('Frame-Subtitle.png') center / contain;
+    }
+    .image {
+      background: assetsUrl('Event-Image-2.png') center / contain;
+    }
+  }
+}

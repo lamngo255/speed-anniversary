@@ -1,0 +1,107 @@
+.panel-invitation {
+  @include sizeWH(19.2rem, 10.06rem);
+
+  text-align: center;
+  padding-top: 0.05rem;
+  margin-top: -0.08rem;
+  background: assetsUrl('bg-3.png') center top / 19.2rem;
+}
+
+.invitation-intro {
+  margin-top: 0.5rem;
+
+  &-title {
+    background: assetsUrl('texts/Title_2.png') center / contain;
+    height: 1.15rem;
+  }
+
+  &-subtitle {
+    font-size: 0.4rem;
+    color: #5d4037;
+  }
+
+  &-image {
+    margin-top: 0.5rem;
+    background: assetsUrl('Invite-Reward.png') center / contain;
+    height: 3.8rem;
+  }
+}
+
+.invitation-form {
+  margin-top: 0.3rem;
+  display: relative;
+
+  .btn-copy-link {
+    @include position(absolute, $left: 5.1rem);
+    @include sizeWH(1.83rem, 0.65rem);
+    background: assetsUrl('buttons/Copy-Link.png') center / contain;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  .invite-code {
+    @include position(absolute, $left: 7rem);
+    background: assetsUrl('Url-Box.png') center / contain;
+    height: 0.65rem;
+    width: 7rem;
+
+    &-input {
+      @include position(absolute, 0rem, $left: 2rem);
+      @include sizeWH(4rem, 0.6rem);
+      @include textMixin(#bf360c, 0.3rem);
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      &::placeholder {
+        @include textMixin(#bf360c, 0.3rem);
+      }
+    }
+  }
+
+  .description {
+    padding-top: 1rem;
+
+    .purple {
+      @include textMixin(#8e24aa, 0.3rem, bold);
+    }
+    .small {
+      padding-top: 0.1rem;
+      font-size: 0.2rem;
+    }
+  }
+
+  .player-items {
+    @include flexCenter(row);
+    margin-top: 0.2rem;
+    position: relative;
+
+    @for $i from 1 through 2 {
+      .item[data-item='#{$i}'] {
+        @include sizeWH(1.24rem, 1.24em);
+        background: assetsUrl('items/#{$i}-Player.png') center / contain;
+
+        &::before {
+          content: '#{$i} Friend';
+          @include position(relative, 0.6rem);
+          font-size: 0.2rem;
+        }
+      }
+    }
+
+    .item + .item {
+      margin-left: 0.6rem;
+    }
+
+    .connector {
+      @include position(absolute, 0.55rem);
+      @include sizeWH(0.64rem, 0.1rem);
+      background: #6b58e5;
+    }
+  }
+}

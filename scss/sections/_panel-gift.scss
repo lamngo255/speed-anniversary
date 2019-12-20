@@ -1,0 +1,104 @@
+.panel-gift {
+  @include sizeWH(19.2rem, 13.99rem);
+
+  text-align: center;
+  padding-top: 1rem;
+  background: assetsUrl('bg-2.png') center top / 19.2rem;
+}
+
+.gift-intro {
+  margin-top: 0.5rem;
+
+  &-title {
+    background: assetsUrl('texts/Title_1.png') center / contain;
+    height: 1.15rem;
+  }
+
+  &-subtitle {
+    font-size: 0.4rem;
+    color: #5d4037;
+  }
+}
+
+.wishlist {
+  margin-top: 0.5rem;
+}
+
+.list-1 {
+  padding-bottom: 0.3rem;
+  .text {
+    @include textMixin(#bf360c, 0.32rem, $weight: 500);
+    padding-bottom: 0.3rem;
+  }
+
+  .wish-items {
+    @include flexCenter(row);
+    @for $i from 1 through 3 {
+      .item[data-item='#{$i}'] {
+        @include sizeWH(1.5rem, 1.5em);
+        background: assetsUrl('items/Pre-Regis-Wish_#{$i}.png') center / contain;
+      }
+
+      .item + .item {
+        margin-left: 0.6rem;
+      }
+    }
+  }
+}
+
+.list-2 {
+  @extend .list-1;
+  padding-bottom: 0.3rem;
+
+  @for $i from 4 through 6 {
+    .item[data-item='#{$i}'] {
+      @include sizeWH(1.5rem, 1.5em);
+      background: assetsUrl('items/Pre-Regis-Wish_#{$i}.png') center / contain;
+    }
+  }
+}
+
+.extra-info {
+  @include textMixin(#bf360c, 0.22rem);
+
+  .purple {
+    color: #8e24aa;
+    font-weight: bold;
+  }
+}
+
+.btn-wish {
+  @include sizeWH(4.15rem, 1.07rem);
+  background: assetsUrl('buttons/Pre-Regis-Button.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Pre-Regis-Button_On.png') center / contain;
+  }
+}
+
+.btn-invite {
+  @include sizeWH(4.15rem, 1.07rem);
+  background: assetsUrl('buttons/Invite-Friend.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Invite-Friend_On.png') center / contain;
+  }
+}
+
+.btn-wish-yourself {
+  @include sizeWH(3.06rem, 0.8rem);
+  background: assetsUrl('buttons/Wish-Button_1.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Wish-Button_1-On.png') center / contain;
+  }
+}
+
+.btn-wish-friend {
+  @include sizeWH(3.06rem, 0.8rem);
+  background: assetsUrl('buttons/Wish-Button_2.png') center / contain;
+
+  &:hover {
+    background: assetsUrl('buttons/Wish-Button_2-On.png') center / contain;
+  }
+}

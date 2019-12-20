@@ -1,7 +1,47 @@
-#navbar {
-  font-size: 0.3rem;
+@import '../mixins.scss';
 
-  .homepage {
-    background: url('../assets/');
+.main-cover {
+  @include sizeWH(19.2rem, 10.8rem);
+  position: relative;
+  background: assetsUrl('cover.png') center top / 19.2rem;
+}
+
+#navbar {
+  text-align: right;
+  padding-top: 0.25rem;
+  padding-right: 3rem;
+
+  .btn-homepage {
+    @include sizeWH(1.97rem, 0.54rem);
+    background: assetsUrl('buttons/Header-Button_1.png') center / contain;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  .btn-download {
+    @include sizeWH(1.97rem, 0.54rem);
+    background: assetsUrl('buttons/Header-Button_2.png') center / contain;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.game-title {
+  width: 100%;
+  position: absolute;
+  bottom: -0.8rem;
+
+  .title {
+    background: assetsUrl('texts/main-title.png') center / contain;
+    height: 2.8rem;
+  }
+  .subtitle {
+    margin-top: -0.5rem;
+    background: assetsUrl('texts/sub-title.png') center / contain;
+    height: 1.3rem;
   }
 }
